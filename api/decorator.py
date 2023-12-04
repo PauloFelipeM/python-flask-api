@@ -1,7 +1,7 @@
 from functools import wraps
 from flask_jwt_extended import get_jwt, verify_jwt_in_request
 from flask import make_response, jsonify, request
-from ..api.services.user_service import get_user_by_api_key
+from api.services.user_service import get_user_by_api_key
 
 def admin_required(fn):
   @wraps(fn)

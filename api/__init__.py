@@ -14,5 +14,5 @@ migrate = Migrate(app, db)
 api = Api(app)
 jwt = JWTManager(app)
 
-from .views import course_views, formation_views, teacher_views, user_views, login_views, refresh_token_views
+from .views import course_views, formation_views, teacher_views, user_views, login_views, refresh_token_views, upload_file_views
 from .models import course_model, formation_model, teacher_model, user_model
